@@ -7,7 +7,6 @@ Objetivos principais do projeto:
 Analisar os dados de crimes por tipo, localização e tempo.
 Identificar tendências de criminalidade e variações sazonais.
 Visualizar áreas de alta incidência de crimes para estratégias de policiamento.
-Realizar análises preditivas para identificar possíveis padrões futuros.
 
 Tecnologias utilizadas:
 
