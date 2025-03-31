@@ -10,8 +10,7 @@ Visualizar áreas de alta incidência de crimes para estratégias de policiament
 
 Tecnologias utilizadas:
 
-Linguagens e Ferramentas: Python, Pandas
-Plataforma de Visualização: Dash/Plotly
+Linguagens e Ferramentas: Python, Pandas, Matplotlib, Folium e Scikit-learn.
 
 Fonte de Dados: Dados históricos do SPD, disponíveis em fontes públicas como o Seattle Open Data Portal.
 Dados disponibilizados em:
