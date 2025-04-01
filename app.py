@@ -9,7 +9,7 @@ navbar = dbc.NavbarSimple(
         dbc.NavItem(dbc.NavLink('HOME', href='/')),
         #dbc.NavItem(dbc.NavLink('COLABORADORES | PDV', href='/page_two')),
     ],
-    brand="SEATTLE - RELATÓRIO DE CRIMES",
+    brand="SEATTLE | Painel de Crimes e Segurança Pública",
     brand_href="/",
     color='#003DA5',
     dark=True,
