@@ -28,6 +28,41 @@ register_page(__name__, name="1.1", path='/page_one_a')
 
 
 ########## Pré-layout ================
+## gráfico linha crescimento populacional
+fig_curva_populacao = px.line(
+    df_population, 
+    x='year', 
+    y='population', 
+    title="Ocorrências de Crimes ao Longo do Tempo",
+    line_shape="spline",
+    markers=True
+)
+fig_curva_populacao.update_traces(line=dict(color="#003DA5", width=2))
+fig_curva_populacao.update_layout(
+    plot_bgcolor="white",
+    title_font=dict(size=20),
+    xaxis=dict(title="Ano", gridcolor="#e0e0e0"),
+    yaxis=dict(title="Número de Ocorrências", gridcolor="#e0e0e0"),
+    font=dict(family="Arial", size=14)
+)
+
+## gráfico linha comportamento crimes (geral)
+fig_curva_crimes_geral = px.line(
+    df_population, 
+    x='year', 
+    y='population', 
+    title="Ocorrências de Crimes ao Longo do Tempo",
+    line_shape="spline",
+    markers=True
+)
+fig_curva_crimes_geral.update_traces(line=dict(color="#003DA5", width=2))
+fig_curva_crimes_geral.update_layout(
+    plot_bgcolor="white",
+    title_font=dict(size=20),
+    xaxis=dict(title="Ano", gridcolor="#e0e0e0"),
+    yaxis=dict(title="Número de Ocorrências", gridcolor="#e0e0e0"),
+    font=dict(family="Arial", size=14)
+)
 
 
 
@@ -39,7 +74,11 @@ layout = html.Div([
     ], className="header"),
 
     html.Div([
-        dbc.Row(dcc.Graph()),
+        dbc.Row([
+            dbc.Col([dcc.Graph(figure=fig_curva_populacao)], width=6),
+
+            dbc.Col([dcc.Graph()], width=6)
+        ]),
 
         dbc.Row()
     ], className="content-wrapper")
