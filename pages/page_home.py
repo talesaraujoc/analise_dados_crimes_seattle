@@ -42,7 +42,7 @@ layout = html.Div([
     html.Div([
         html.Div([
             html.H2("Sobre o Projeto 📍"),
-            html.P("Este projeto realiza uma análise dos dados de criminalidade da cidade de Seattle fornecidos pelo Departamento de Polícia (SPD). Identificamos padrões, tendências sazonais e locais com maior incidência para apoiar estratégias de segurança."),
+            html.P("Este projeto realiza uma análise dos dados de criminalidade da cidade de Seattle fornecidos pelo seu Departamento de Polícia (SPD). Identificamos padrões, tendências sazonais e locais com maior incidência para apoiar estratégias de segurança."),
 
             html.H3("Objetivos"),
             html.Ul([

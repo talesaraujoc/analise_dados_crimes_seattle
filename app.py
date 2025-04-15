@@ -14,8 +14,8 @@ navbar = dbc.Navbar(
             dbc.Col(
                 dbc.Nav([
                     dbc.NavItem(dbc.NavLink("1.1", href="/page_one_a", className="me-3")),
-                    dbc.NavItem(dbc.NavLink("1.2", href="/page_two", className="me-3")),
-                    dbc.NavItem(dbc.NavLink("1.3", href="/page_three", className="me-3")),
+                    dbc.NavItem(dbc.NavLink("1.2", href="/page_one_b", className="me-3")),
+                    dbc.NavItem(dbc.NavLink("1.3", href="/page_one_c", className="me-3")),
                     dbc.NavItem(dbc.NavLink("HOME", href="/")),
                 ], className="ms-auto", navbar=True),
                 width="auto"

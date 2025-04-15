@@ -13,7 +13,7 @@ from globals import *
 
 
 # Dash
-register_page(__name__, name="1.3", path='/page_three')
+register_page(__name__, name="1.3", path='/page_one_c')
 
 
 
