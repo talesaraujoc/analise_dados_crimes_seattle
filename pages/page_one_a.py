@@ -37,7 +37,8 @@ fig_curva_populacao.update_traces(line=dict(color="#003DA5", width=2))
 fig_curva_populacao.update_layout(
     plot_bgcolor="white",
     title_font=dict(size=20),
-    xaxis=dict(title="Ano", gridcolor="#e0e0e0"),
+    #xaxis=dict(title="Ano", gridcolor="#e0e0e0"),
+    xaxis=dict(title="", gridcolor="#e0e0e0"),
     yaxis=dict(title="Número de Ocorrências", gridcolor="#e0e0e0"),
     font=dict(family="Arial", size=14)
 )
@@ -55,7 +56,7 @@ fig_curva_crimes_geral.update_traces(line=dict(color="#003DA5", width=2))
 fig_curva_crimes_geral.update_layout(
     plot_bgcolor="white",
     title_font=dict(size=20),
-    xaxis=dict(title="Ano", gridcolor="#e0e0e0"),
+    xaxis=dict(title="", gridcolor="#e0e0e0"),
     yaxis=dict(title="Taxa Número de Ocorrências", gridcolor="#e0e0e0"),
     font=dict(family="Arial", size=14)
 )
