@@ -15,6 +15,7 @@ navbar = dbc.Navbar(
                 dbc.Nav([
                     dbc.NavItem(dbc.NavLink("1.1", href="/page_one_a", className="me-3")),
                     dbc.NavItem(dbc.NavLink("1.2", href="/page_two", className="me-3")),
+                    dbc.NavItem(dbc.NavLink("1.3", href="/page_three", className="me-3")),
                     dbc.NavItem(dbc.NavLink("HOME", href="/")),
                 ], className="ms-auto", navbar=True),
                 width="auto"
@@ -28,22 +29,35 @@ navbar = dbc.Navbar(
 
 app.layout = html.Div([
     dbc.Row([
+        # Navbar à esquerda
         dbc.Col([
             navbar
         ], width=10),
 
+        # Logomarca à direita, centralizada verticalmente
         dbc.Col(
             html.Div(
-                html.Img(src='assets/logo_gov.png', style={"width": "140px"}), 
-                style={"text-align": "right", "padding-right": "20px"}
+                html.Img(src='assets/logo_gov.png', style={"height": "50px"}),  # altura controlada, e não largura
+                style={
+                    "display": "flex",
+                    "alignItems": "center",
+                    "justifyContent": "flex-end",
+                    "width": "100%",
+                    "paddingRight": "20px"
+                }
             ),
             width=2,
-            style={"display": "flex", "align-items": "center", "justify-content": "flex-end"}
+            style={
+                "display": "flex",
+                "alignItems": "center",
+                "justifyContent": "flex-end"
+            }
         )
-    ], style={"background-color": "#FFFFFF", "height": "80px"}),
+    ], style={"backgroundColor": "#FFFFFF", "height": "80px", "alignItems": "center"}),
 
     page_container
 ])
+
 
 
 
