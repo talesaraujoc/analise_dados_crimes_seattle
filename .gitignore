@@ -4,4 +4,4 @@ data/*
 !data/processed/split_SPD_Crime_data_cleaned_1.csv
 !data/processed/split_SPD_Crime_data_cleaned_2.csv
 !data/processed/split_SPD_Crime_data_cleaned_3.csv
-
+!data/raw/population.xlsx
