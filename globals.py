@@ -3,9 +3,10 @@ import pandas as pd
 from src import funcoes
 
 ########## configurações iniciais
-parcial_path_absolute = Path.home() / 'OneDrive' / 'Documentos' / 'GitHub'
-parcial_path_relative = Path('analise_dados_crimes_seattle')
-full_path = parcial_path_absolute / parcial_path_relative
+#parcial_path_absolute = Path.home() / 'OneDrive' / 'Documentos' / 'GitHub'
+#parcial_path_relative = Path('analise_dados_crimes_seattle')
+#full_path = parcial_path_absolute / parcial_path_relative
+full_path = Path.cwd()
 
 absolute_path_data_raw = full_path / 'data' / 'raw'
 absolute_path_data_processed = full_path / 'data' / 'processed'
