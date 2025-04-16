@@ -1,7 +1,7 @@
 /venv_crimes_seatle
 
 data/*
-!data/processed/SPD_Crime_data_cleaned.csv
-!data/raw/SPD_Crime_Data__2008-Present_20250223.csv
-!data/raw/SPD_Crime_Data__2008-Present_20250311.csv
+!data/processed/split_SPD_Crime_data_cleaned_1.csv
+!data/processed/split_SPD_Crime_data_cleaned_2.csv
+!data/processed/split_SPD_Crime_data_cleaned_3.csv
 
